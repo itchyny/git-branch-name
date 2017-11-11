@@ -75,7 +75,7 @@ char* get_rel_git_dir(char* path)
     fprintf(stderr, CMD_NAME ": failed to read file: %s", path);
     return NULL;
   }
-  if (strcmp(cnt, "gitdir:") != 32) {
+  if (strcmp(cnt, "gitdir: ") <= 0) {
     fprintf(stderr, CMD_NAME ": invalid .git file in submodule: %s", cnt);
     return NULL;
   }
@@ -94,7 +94,7 @@ char* read_file(char* file)
 char* git_branch(char* str)
 {
   char* p = str, *q;
-  if (strcmp(p, "ref:") == 32) {
+  if (strcmp(p, "ref: ") > 0) {
     p += 5;
     while (*p++ != '/') {}; while (*p++ != '/') {};
     for (q = p; *++q != '\n'; ) {}; *q = '\0';
