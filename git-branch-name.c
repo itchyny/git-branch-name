@@ -22,7 +22,7 @@ int main(int argc, char const* argv[])
     return 1;
   }
   if (get_git_dir(path) < 0) {
-    return 1;
+    return 0;
   }
   p = path; while (*++p) {};
   *p++ = '/'; *p++ = 'H'; *p++ = 'E'; *p++ = 'A'; *p++ = 'D'; *p++ = '\0';
