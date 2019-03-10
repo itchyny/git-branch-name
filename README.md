@@ -11,6 +11,11 @@ sudo make install
 git branch-name
 ```
 
+Installation with Homebrew.
+```shell
+brew install itchyny/git-branch-name/git-branch-name
+```
+
 ## Author
 itchyny (https://github.com/itchyny)
 
