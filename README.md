@@ -13,7 +13,7 @@ git branch-name
 
 Installation with Homebrew.
 ```shell
-brew install itchyny/git-branch-name/git-branch-name
+brew install itchyny/tap/git-branch-name
 ```
 
 ## Author
