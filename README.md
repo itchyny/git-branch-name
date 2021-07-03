@@ -16,8 +16,10 @@ Installation with Homebrew.
 brew install itchyny/tap/git-branch-name
 ```
 
-## Author
+## Authors
 itchyny (https://github.com/itchyny)
+
+notfed (https://github.com/notfed)
 
 ## License
 This software is released under the MIT License, see LICENSE.
